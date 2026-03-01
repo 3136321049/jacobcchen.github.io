@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日报 2026-03-02 - AI 新闻日报</title>
+    <link rel="icon" type="image/svg+xml" href="/static/favicon.svg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI',
+                               'Noto Sans SC', 'PingFang SC', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .prose h1 { @apply text-2xl font-bold mt-6 mb-3; }
+        .prose h2 { @apply text-xl font-semibold mt-5 mb-2; }
+        .prose h3 { @apply text-lg font-semibold mt-4 mb-2; }
+        .prose p { @apply mb-3 leading-relaxed; }
+        .prose ul { @apply list-disc pl-5 mb-3; }
+        .prose ol { @apply list-decimal pl-5 mb-3; }
+        .prose li { @apply mb-1; }
+        .prose code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm; }
+        .prose pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto mb-4; }
+        .prose a { @apply text-blue-600 hover:underline; }
+        .prose blockquote { @apply border-l-4 border-blue-400 pl-4 italic text-gray-600 my-4; }
+        .prose table { @apply w-full border-collapse mb-4; }
+        .prose th { @apply bg-gray-100 border border-gray-200 px-3 py-2 text-left text-sm font-semibold; }
+        .prose td { @apply border border-gray-200 px-3 py-2 text-sm; }
+        .prose hr { @apply my-6 border-gray-200; }
+    </style>
+    
+</head>
+<body class="bg-gray-50 text-gray-900 min-h-screen font-sans">
+    <nav class="bg-white border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6">
+            <div class="flex items-center justify-between h-14">
+                <a href="/" class="font-bold text-lg text-gray-900 tracking-tight">
+                    NewsBot
+                </a>
+                <div class="flex items-center gap-5 text-sm">
+                    <a href="/" class="text-gray-500 hover:text-gray-900 transition-colors">首页</a>
+                    <a href="/articles/" class="text-gray-500 hover:text-gray-900 transition-colors">文章</a>
+                    <a href="/digests/" class="text-gray-500 hover:text-gray-900 transition-colors">日报</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
+        
+<article class="max-w-3xl mx-auto">
+
+    <a href="/digests/" class="inline-flex items-center text-sm text-gray-400 hover:text-gray-600 mb-4">
+        &larr; 返回日报归档
+    </a>
+
+    <h1 class="text-xl sm:text-2xl font-bold text-gray-900 mb-6">
+        日报 &middot; 2026-03-02
+    </h1>
+
+    <div class="bg-white rounded-xl border border-gray-200 p-5 sm:p-8 prose max-w-none">
+        <h1 id="2026-03-02">技术日报 | 2026-03-02</h1>
+<h2 id="_1">今日亮点</h2>
+<h3 id="1-parammem">1. ParamMem：参数化记忆模块增强语言代理反思能力</h3>
+<p><strong>来源</strong>：cs.LG<br />
+<strong>关注理由</strong>：提出将跨样本反思模式编码进模型参数的创新方法，实现了温度控制的多样化反思生成，为Agent记忆机制开辟了新方向。</p>
+<h3 id="2-rlhf">2. RLHF架构的根本局限性被揭示</h3>
+<p><strong>来源</strong>：cs.AI<br />
+<strong>关注理由</strong>：论文证明优化系统无法实现真正的规范响应，定义了智能体的两个必要架构条件（不可通约性与否定响应性），对RLHF范式的理论基础提出质疑。</p>
+<h3 id="3-modernbertbert">3. ModernBERT：BERT的现代化替代方案</h3>
+<p><strong>来源</strong>：Hugging Face Blog<br />
+<strong>关注理由</strong>：经过多年发展，终于出现有潜力的BERT替代方案，通过架构优化在保持性能的同时显著提升效率。</p>
+<h3 id="4-transformers-agents-20">4. Transformers Agents 2.0发布</h3>
+<p><strong>来源</strong>：Hugging Face Blog<br />
+<strong>关注理由</strong>：引入可迭代的ReactAgent和CodeAgent，Llama-3-70B-Instruct在GAIA排行榜上超越基于GPT-4的Agent，标志着开源Agent能力的重大突破。</p>
+<hr />
+<h2 id="_2">按主题分类</h2>
+<h3 id="_3">🤖 模型架构创新</h3>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ParamMem: Augmenting Language Agents with Parametric Reflective Memory</td>
+<td>通过参数化记忆模块增强语言代理的反思多样性</td>
+</tr>
+<tr>
+<td>Agency and Architectural Limits: Why Optimization-Based Systems Cannot Be Norm-Responsive</td>
+<td>RLHF训练的大语言模型在架构上无法实现真正的规范响应能力</td>
+</tr>
+<tr>
+<td>ModernBERT: Finally, a Replacement for BERT</td>
+<td>BERT架构的现代化改进版本，通过架构优化提升效率</td>
+</tr>
+<tr>
+<td>Falcon Mamba: 首个性能强劲的无注意力7B模型</td>
+<td>首个通用大规模纯Mamba架构的7B模型，支持任意长度序列处理</td>
+</tr>
+<tr>
+<td>mmBERT: ModernBERT goes Multilingual</td>
+<td>将ModernBERT模型扩展到多语言场景，提升跨语言理解能力</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_4">🚀 大模型发布</h3>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Qwen3.5 122B and 35B models offer Sonnet 4.5 performance on local computers</td>
+<td>阿里开源Qwen3.5模型，本地性能媲美Sonnet 4.5</td>
+</tr>
+<tr>
+<td>Welcome GPT OSS, the new open-source model family from OpenAI</td>
+<td>OpenAI发布新的开源模型家族，标志性进展</td>
+</tr>
+<tr>
+<td>Welcome Llama 4 Maverick &amp; Scout on Hugging Face</td>
+<td>Meta发布Llama 4系列新模型</td>
+</tr>
+<tr>
+<td>Welcome Gemma 3: Google's all new multimodal, multilingual, long context open LLM</td>
+<td>Google推出Gemma 3，具备多模态、多语言和长上下文能力</td>
+</tr>
+<tr>
+<td>Aya Vision: 101语言多模态模型</td>
+<td>大规模开源的多语言多模态模型，支持101种语言</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_5">⚡ 推理优化</h3>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Continuous batching from first principles</td>
+<td>从第一性原理推导LLM连续批处理技术</td>
+</tr>
+<tr>
+<td>Unlocking Longer Generation with KV Cache Quantization</td>
+<td>通过KV缓存量化大幅降低显存占用，实现更长文本生成</td>
+</tr>
+<tr>
+<td>Prefill and Decode for Concurrent Requests</td>
+<td>通过预填充和解码分离技术优化并发请求处理</td>
+</tr>
+<tr>
+<td>Faster Assisted Generation with Dynamic Speculation</td>
+<td>动态推测优化辅助生成，加速推理速度</td>
+</tr>
+<tr>
+<td>Efficient Request Queueing</td>
+<td>探讨请求队列优化策略，提升系统吞吐量</td>
+</tr>
+</tbody>
+</table>
+<h3 id="vlm">🌐 多模态模型（VLM）</h3>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Llama can now see and run on your device - welcome Llama 3.2</td>
+<td>Meta发布带视觉和多模态能力的Llama 3.2</td>
+</tr>
+<tr>
+<td>PaliGemma 2 Mix: Google's New Instruction Vision Language Models</td>
+<td>Google发布指令调优视觉语言模型，通过MoE架构提升性能</td>
+</tr>
+<tr>
+<td>SmolVLM2: Bringing Video Understanding to Every Device</td>
+<td>小型视觉语言模型，支持设备端视频理解</td>
+</tr>
+<tr>
+<td>Aya Vision: 101语言多模态模型</td>
+<td>大规模开源的多语言多模态模型，支持101种语言</td>
+</tr>
+<tr>
+<td>SigLIP 2: 更好的多语言视觉语言编码器</td>
+<td>支持18种语言，优化跨模态理解性能</td>
+</tr>
+</tbody>
+</table>
+<h3 id="agent">🤖 Agent技术</h3>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AI Agents Are Here - Transformers Agents 2.0</td>
+<td>新框架引入ReactAgent和CodeAgent，Llama-3-70B超越GPT-4 Agent</td>
+</tr>
+<tr>
+<td>OpenEnv: Building the Open Agent Ecosystem Together</td>
+<td>开源智能体生态系统框架，促进开发、部署和协作</td>
+</tr>
+<tr>
+<td>CodeAgents + Structure: A Better Way to Execute Actions</td>
+<td>分层决策和动作验证机制提升Agent可靠性</td>
+</tr>
+<tr>
+<td>smolagents: 简单的代码驱动Agent</td>
+<td>小型、多语言、长上下文推理Agent框架</td>
+</tr>
+<tr>
+<td>DABStep: Data Agent Benchmark for Multi-step Reasoning</td>
+<td>评估智能体多步推理任务表现的基准框架</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_6">📊 评估与基准</h3>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>HELMET: Holistically Evaluating Long-context Models</td>
+<td>首个系统性评估长上下文LLM的基准框架</td>
+</tr>
+<tr>
+<td>LiveCodeBench Leaderboard</td>
+<td>首个全面且无污染的代码LLM排行榜</td>
+</tr>
+<tr>
+<td>The Open LLM Leaderboard</td>
+<td>排行榜更新，新增数学能力评估Math-Verify</td>
+</tr>
+<tr>
+<td>Community Evals: 去中心化AI模型评估系统</td>
+<td>实现去中心化、透明的AI模型评估</td>
+</tr>
+<tr>
+<td>BenCzechMark - Can your LLM Understand Czech?</td>
+<td>首个专门针对捷克语的大语言模型评估基准</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_7">🔧 工具与平台</h3>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sentence Transformers is joining Hugging Face</td>
+<td>在Hugging Face提供高效的句子嵌入模型和API</td>
+</tr>
+<tr>
+<td>Transformers.js v3: WebGPU Support</td>
+<td>引入WebGPU支持，显著提升浏览器端AI推理性能</td>
+</tr>
+<tr>
+<td>Outlines-core 0.1.0: Structured Generation in Rust/Python</td>
+<td>跨模型结构化生成框架，保证输出格式有效性</td>
+</tr>
+<tr>
+<td>Gradio 5: 新一代ML界面构建工具</td>
+<td>引入全新组件系统、增强性能和可扩展性</td>
+</tr>
+<tr>
+<td>Trackio: 轻量级实验追踪库</td>
+<td>完全兼容WandB API，提供本地仪表板</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">🔬 其他研究</h3>
+<table>
+<thead>
+<tr>
+<th>标题</th>
+<th>一句话总结</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Scaling Search Relevance: Augmenting App Store Ranking with LLM</td>
+<td>用LLM生成文本相关性标签，提升App Store搜索排名效果</td>
+</tr>
+<tr>
+<td>CXReasonAgent: 基于证据的胸片诊断推理</td>
+<td>整合LLM与诊断工具，解决LVLMs诊断证据不忠实问题</td>
+</tr>
+<tr>
+<td>DDTSR: 低延迟口语对话系统框架</td>
+<td>实现边听边想、边说边想，延迟降低19%-51%</td>
+</tr>
+<tr>
+<td>GeoPT: 模型自学真实物理规律</td>
+<td>何恺明团队新预训练范式</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_9">趋势洞察</h2>
+<h3 id="1-agentagentgpt-4">1. Agent能力持续突破，开源Agent首次超越GPT-4</h3>
+<p>Transformers Agents 2.0的发布标志着开源Agent能力的重大里程碑。Llama-3-70B-Instruct在GAIA排行榜上超越基于GPT-4的Agent，表明开源模型在复杂任务执行能力上已追平甚至超越闭源模型。</p>
+<h3 id="2">2. 推理优化成为部署瓶颈的关键解决方案</h3>
+<p>从连续批处理、KV缓存量化到动态推测解码，各类推理优化技术密集涌现。这些技术共同指向一个目标：在保持模型性能的同时，大幅降低部署成本和延迟，使大模型在实际生产环境中更可行。</p>
+<h3 id="3">3. 多语言与多模态融合趋势明显</h3>
+<p>Aya Vision支持101种语言、SigLIP 2支持18种语言、Gemma 3的多模态能力——模型正从单一模态、单一语言向真正的多模态、多语言能力演进，这反映了AI应用全球化、多样化的实际需求。</p>
+    </div>
+
+</article>
+
+    </main>
+
+    <footer class="border-t border-gray-100 mt-16">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 py-6 text-center text-xs text-gray-400">
+            Powered by NewsBot &middot; 2026-03-02 00:09
+        </div>
+    </footer>
+</body>
+</html>
